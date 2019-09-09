@@ -18,8 +18,8 @@
  ****************************************************************************/
 #ifndef __UAPI_CAM_ICP_H__
 #define __UAPI_CAM_ICP_H__
-#include "cam_defs.h"
-#include "cam_cpas.h"
+#include <media/cam_defs.h>
+#include <media/cam_cpas.h>
 #define CAM_ICP_DEV_TYPE_A5 1
 #define CAM_ICP_DEV_TYPE_IPE 2
 #define CAM_ICP_DEV_TYPE_BPS 3
@@ -29,7 +29,10 @@
 #define CAM_ICP_RES_TYPE_BPS 1
 #define CAM_ICP_RES_TYPE_IPE_RT 2
 #define CAM_ICP_RES_TYPE_IPE 3
-#define CAM_ICP_RES_TYPE_MAX 4
+#define CAM_ICP_RES_TYPE_IPE_SEMI_RT 4
+#define CAM_ICP_RES_TYPE_BPS_RT 5
+#define CAM_ICP_RES_TYPE_BPS_SEMI_RT 6
+#define CAM_ICP_RES_TYPE_MAX 7
 #define CAM_ICP_OPCODE_IPE_UPDATE 0
 #define CAM_ICP_OPCODE_BPS_UPDATE 1
 #define CAM_ICP_OPCODE_IPE_SETTINGS 2

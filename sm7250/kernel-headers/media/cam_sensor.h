@@ -83,7 +83,7 @@ struct cam_ois_opcode {
   uint32_t memory;
 } __attribute__((packed));
 struct cam_cmd_ois_info {
-  uint16_t slave_addr;
+  uint32_t slave_addr;
   uint8_t i2c_freq_mode;
   uint8_t cmd_type;
   uint8_t ois_fw_flag;
