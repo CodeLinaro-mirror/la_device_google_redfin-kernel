@@ -18,7 +18,7 @@
  ****************************************************************************/
 #ifndef __UAPI_CAM_JPEG_H__
 #define __UAPI_CAM_JPEG_H__
-#include "cam_defs.h"
+#include <media/cam_defs.h>
 #define CAM_JPEG_DEV_TYPE_ENC 0
 #define CAM_JPEG_DEV_TYPE_DMA 1
 #define CAM_JPEG_DEV_TYPE_MAX 2

@@ -59,6 +59,8 @@ struct spcom_send_command {
 struct spcom_user_create_channel_command {
   enum spcom_cmd_id cmd_id;
   char ch_name[SPCOM_CHANNEL_NAME_SIZE];
+#define SPCOM_IS_SHARABLE_SUPPORTED
+  bool is_sharable;
 } __attribute__((packed));
 #define SPCOM_USER_RESTART_SP_CMD
 struct spcom_user_restart_sp_command {

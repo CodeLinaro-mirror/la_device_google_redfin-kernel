@@ -19,6 +19,7 @@
 #ifndef __SND_COMPRESS_PARAMS_H
 #define __SND_COMPRESS_PARAMS_H
 #include <linux/types.h>
+#define MAX_PCM_DECODE_CHANNELS 32
 #define MAX_NUM_CODECS 32
 #define MAX_NUM_CODEC_DESCRIPTORS 32
 #define MAX_NUM_BITRATES 32
@@ -62,9 +63,9 @@
 #define SND_AUDIOCODEC_DSD ((__u32) 0x00000022)
 #define SND_AUDIOCODEC_APTX ((__u32) 0x00000023)
 #define SND_AUDIOCODEC_TRUEHD ((__u32) 0x00000024)
-#define SND_AUDIOCODEC_DLB_MAT ((__u32) 0x00000025)
-#define SND_AUDIOCODEC_DLB_THD ((__u32) 0x00000026)
-#define SND_AUDIOCODEC_MAX SND_AUDIOCODEC_DLB_THD
+#define SND_AUDIOCODEC_MAT ((__u32) 0x00000025)
+#define SND_AUDIOCODEC_THD ((__u32) 0x00000026)
+#define SND_AUDIOCODEC_MAX SND_AUDIOCODEC_THD
 #define SND_AUDIOPROFILE_PCM ((__u32) 0x00000001)
 #define SND_AUDIOCHANMODE_MP3_MONO ((__u32) 0x00000001)
 #define SND_AUDIOCHANMODE_MP3_STEREO ((__u32) 0x00000002)
@@ -245,6 +246,13 @@ struct snd_dec_aptx {
   __u32 uap;
   __u32 nap;
 };
+struct snd_dec_pcm {
+  __u32 num_channels;
+  __u8 ch_map[MAX_PCM_DECODE_CHANNELS];
+} __attribute__((packed, aligned(4)));
+struct snd_dec_amrwb_plus {
+  __u32 bit_stream_fmt;
+};
 union snd_codec_options {
   struct snd_enc_wma wma;
   struct snd_enc_vorbis vorbis;
@@ -257,6 +265,8 @@ union snd_codec_options {
   struct snd_dec_ape ape;
   struct snd_dec_aptx aptx_dec;
   struct snd_dec_thd truehd;
+  struct snd_dec_pcm pcm_dec;
+  struct snd_dec_amrwb_plus amrwbplus;
 };
 struct snd_codec_desc {
   __u32 max_ch;

@@ -34,6 +34,15 @@ struct drm_msm_timespec {
   __s64 tv_sec;
   __s64 tv_nsec;
 };
+#define DRM_EDID_CLRMETRY_xvYCC_601 (1 << 0)
+#define DRM_EDID_CLRMETRY_xvYCC_709 (1 << 1)
+#define DRM_EDID_CLRMETRY_sYCC_601 (1 << 2)
+#define DRM_EDID_CLRMETRY_ADOBE_YCC_601 (1 << 3)
+#define DRM_EDID_CLRMETRY_ADOBE_RGB (1 << 4)
+#define DRM_EDID_CLRMETRY_BT2020_CYCC (1 << 5)
+#define DRM_EDID_CLRMETRY_BT2020_YCC (1 << 6)
+#define DRM_EDID_CLRMETRY_BT2020_RGB (1 << 7)
+#define DRM_EDID_CLRMETRY_DCI_P3 (1 << 15)
 #define HDR_PRIMARIES_COUNT 3
 #define HDR_EOTF_SDR_LUM_RANGE 0x0
 #define HDR_EOTF_HDR_LUM_RANGE 0x1
