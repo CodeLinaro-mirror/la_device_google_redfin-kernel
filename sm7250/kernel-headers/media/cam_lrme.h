@@ -18,7 +18,7 @@
  ****************************************************************************/
 #ifndef __UAPI_CAM_LRME_H__
 #define __UAPI_CAM_LRME_H__
-#include "cam_defs.h"
+#include <media/cam_defs.h>
 enum CAM_LRME_IO_TYPE {
   CAM_LRME_IO_TYPE_TAR,
   CAM_LRME_IO_TYPE_REF,
