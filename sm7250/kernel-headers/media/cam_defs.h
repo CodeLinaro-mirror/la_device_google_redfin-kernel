@@ -164,6 +164,12 @@ struct cam_iommu_handle {
 #define CAM_PACKET_DEV_ICP 16
 #define CAM_PACKET_DEV_LRME 17
 #define CAM_PACKET_DEV_MAX 18
+#define CAM_REG_DUMP_BASE_TYPE_ISP_LEFT 1
+#define CAM_REG_DUMP_BASE_TYPE_ISP_RIGHT 2
+#define CAM_REG_DUMP_BASE_TYPE_CAMNOC 3
+#define CAM_REG_DUMP_READ_TYPE_CONT_RANGE 1
+#define CAM_REG_DUMP_READ_TYPE_DMI 2
+#define CAM_REG_DUMP_DMI_CONFIG_MAX 5
 #define CAM_PACKET_MAX_PLANES 3
 struct cam_plane_cfg {
   uint32_t width;
@@ -354,5 +360,44 @@ struct cam_cmd_mem_regions {
   uint32_t version;
   uint32_t num_regions;
   struct cam_cmd_mem_region_info map_info_array[1];
+};
+struct cam_reg_write_desc {
+  uint32_t offset;
+  uint32_t value;
+};
+struct cam_reg_range_read_desc {
+  uint32_t offset;
+  uint32_t num_values;
+};
+struct cam_dmi_read_desc {
+  uint32_t num_pre_writes;
+  uint32_t num_post_writes;
+  struct cam_reg_write_desc pre_read_config[CAM_REG_DUMP_DMI_CONFIG_MAX];
+  struct cam_reg_range_read_desc dmi_data_read;
+  struct cam_reg_write_desc post_read_config[CAM_REG_DUMP_DMI_CONFIG_MAX];
+};
+struct cam_reg_read_info {
+  uint32_t type;
+  uint32_t reserved;
+  union {
+    struct cam_reg_range_read_desc reg_read;
+    struct cam_dmi_read_desc dmi_read;
+  };
+};
+struct cam_reg_dump_out_buffer {
+  uint64_t req_id;
+  uint32_t bytes_written;
+  uint32_t dump_data[1];
+};
+struct cam_reg_dump_desc {
+  uint32_t reg_base_type;
+  uint32_t dump_buffer_offset;
+  uint32_t dump_buffer_size;
+  uint32_t num_read_range;
+  struct cam_reg_read_info read_range[1];
+};
+struct cam_reg_dump_input_info {
+  uint32_t num_dump_sets;
+  uint32_t dump_set_offsets[1];
 };
 #endif

@@ -18,10 +18,10 @@
  ****************************************************************************/
 #ifndef __UAPI_CAM_ISP_H__
 #define __UAPI_CAM_ISP_H__
-#include "cam_defs.h"
-#include "cam_isp_vfe.h"
-#include "cam_isp_ife.h"
-#include "cam_cpas.h"
+#include <media/cam_defs.h>
+#include <media/cam_isp_vfe.h>
+#include <media/cam_isp_ife.h>
+#include <media/cam_cpas.h>
 #define CAM_ISP_DEV_NAME "cam-isp"
 #define CAM_ISP_HW_BASE 0
 #define CAM_ISP_HW_CSID 1
@@ -72,6 +72,9 @@
 #define CAM_ISP_PACKET_META_GENERIC_BLOB_LEFT 10
 #define CAM_ISP_PACKET_META_GENERIC_BLOB_RIGHT 11
 #define CAM_ISP_PACKET_META_GENERIC_BLOB_COMMON 12
+#define CAM_ISP_PACKET_META_REG_DUMP_PER_REQUEST 13
+#define CAM_ISP_PACKET_META_REG_DUMP_ON_FLUSH 14
+#define CAM_ISP_PACKET_META_REG_DUMP_ON_ERROR 15
 #define CAM_ISP_DSP_MODE_NONE 0
 #define CAM_ISP_DSP_MODE_ONE_WAY 1
 #define CAM_ISP_DSP_MODE_ROUND 2
@@ -85,6 +88,7 @@
 #define CAM_ISP_GENERIC_BLOB_TYPE_IFE_CORE_CONFIG 7
 #define CAM_ISP_GENERIC_BLOB_TYPE_VFE_OUT_CONFIG 8
 #define CAM_ISP_GENERIC_BLOB_TYPE_BW_CONFIG_V2 9
+#define CAM_ISP_GENERIC_BLOB_TYPE_CSID_QCFA_CONFIG 12
 #define CAM_ISP_VC_DT_CFG 4
 #define CAM_ISP_IFE0_HW 0x1
 #define CAM_ISP_IFE1_HW 0x2
@@ -245,6 +249,9 @@ struct cam_isp_clock_config {
 } __attribute__((packed));
 struct cam_isp_csid_clock_config {
   uint64_t csid_clock;
+} __attribute__((packed));
+struct cam_isp_csid_qcfa_config {
+  uint32_t csid_binning;
 } __attribute__((packed));
 struct cam_isp_bw_vote {
   uint32_t resource_id;
