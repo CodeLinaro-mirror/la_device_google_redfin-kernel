@@ -3,8 +3,8 @@
  * Copyright (c) 2017, 2019, The Linux Foundation. All rights reserved.
  */
 
-#ifndef _UAPI_QSEECOM_H_
-#define _UAPI_QSEECOM_H_
+#ifndef _QSEECOM_H_
+#define _QSEECOM_H_
 
 #include <linux/types.h>
 #include <linux/ioctl.h>
@@ -410,4 +410,4 @@ struct file;
 #define QSEECOM_IOCTL_FBE_CLEAR_KEY \
 	_IOWR(QSEECOM_IOC_MAGIC, 44, struct qseecom_ice_key_data_t)
 
-#endif /* _UAPI_QSEECOM_H_ */
+#endif /* _QSEECOM_H_ */
