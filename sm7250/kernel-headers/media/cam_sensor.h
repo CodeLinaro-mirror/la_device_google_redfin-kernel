@@ -30,7 +30,8 @@ enum rainbow_op_type {
   RAINBOW_SEQ_READ,
   RAINBOW_RANDOM_READ,
   RAINBOW_SEQ_WRITE,
-  RAINBOW_RANDOM_WRITE
+  RAINBOW_RANDOM_WRITE,
+  RAINBOW_ENABLE
 };
 struct rainbow_config {
   enum rainbow_op_type operation;
@@ -203,6 +204,12 @@ struct cam_sensor_streamon_dev {
   uint32_t handle_type;
   uint32_t reserved;
   uint64_t info_handle;
+} __attribute__((packed));
+struct cam_cmd_get_sensor_data {
+  uint32_t reg_addr;
+  uint32_t reg_data;
+  uint64_t query_size_handle;
+  uint64_t query_data_handle;
 } __attribute__((packed));
 struct cam_flash_init {
   uint8_t flash_type;
