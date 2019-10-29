@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "5959071"
+    build_id: "5959884"
     target: "kernel_redfin"
     source_file: "wcd938x_slave_dlkm.ko"
   }
   dest_file: "wcd938x_slave_dlkm.ko"
-  version: "Linux version 4.19.66-gbf1c3bee34e5-ab5959071 (android-build@abfarm673) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Wed Oct 23 02:22:28 UTC 2019"
+  version: "Linux version 4.19.66-gc4c0a9ab3b16-ab5959884 (android-build@wpre1.hot.corp.google.com) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Wed Oct 23 12:01:06 UTC 2019"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
