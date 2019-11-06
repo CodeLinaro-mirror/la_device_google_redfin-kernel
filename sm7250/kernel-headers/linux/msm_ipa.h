@@ -18,6 +18,7 @@
  ****************************************************************************/
 #ifndef _MSM_IPA_H_
 #define _MSM_IPA_H_
+#include <stdio.h>
 #include <stdint.h>
 #include <stddef.h>
 #include <sys/stat.h>
@@ -108,6 +109,8 @@
 #define IPA_IOCTL_FNR_COUNTER_ALLOC 74
 #define IPA_IOCTL_FNR_COUNTER_DEALLOC 75
 #define IPA_IOCTL_FNR_COUNTER_QUERY 76
+#define IPA_IOCTL_SET_FNR_COUNTER_INFO 77
+#define IPA_IOCTL_GET_NAT_IN_SRAM_INFO 78
 #define IPA_HDR_MAX_SIZE 64
 #define IPA_RESOURCE_NAME_MAX 32
 #define IPA_NUM_PROPS_MAX 35
@@ -277,11 +280,18 @@ enum ipa_client_type {
 #define IPA_CLIENT_IS_TEST_PROD(client) ((client) == IPA_CLIENT_TEST_PROD || (client) == IPA_CLIENT_TEST1_PROD || (client) == IPA_CLIENT_TEST2_PROD || (client) == IPA_CLIENT_TEST3_PROD || (client) == IPA_CLIENT_TEST4_PROD)
 #define IPA_CLIENT_IS_TEST_CONS(client) ((client) == IPA_CLIENT_TEST_CONS || (client) == IPA_CLIENT_TEST1_CONS || (client) == IPA_CLIENT_TEST2_CONS || (client) == IPA_CLIENT_TEST3_CONS || (client) == IPA_CLIENT_TEST4_CONS)
 #define IPA_CLIENT_IS_TEST(client) (IPA_CLIENT_IS_TEST_PROD(client) || IPA_CLIENT_IS_TEST_CONS(client))
+enum ipa3_nat_mem_in {
+  IPA_NAT_MEM_IN_DDR = 0,
+  IPA_NAT_MEM_IN_SRAM = 1,
+  IPA_NAT_MEM_IN_MAX
+};
+#define IPA_VALID_NAT_MEM_IN(t) ((t) >= IPA_NAT_MEM_IN_DDR && (t) < IPA_NAT_MEM_IN_MAX)
 enum ipa_ip_type {
   IPA_IP_v4,
   IPA_IP_v6,
   IPA_IP_MAX
 };
+#define VALID_IPA_IP_TYPE(t) ((t) >= IPA_IP_v4 && (t) < IPA_IP_MAX)
 enum ipa_rule_type {
   IPA_RULE_HASHABLE,
   IPA_RULE_NON_HASHABLE,
@@ -943,6 +953,8 @@ struct ipa_ioc_v4_nat_init {
   uint16_t table_entries;
   uint16_t expn_table_entries;
   uint32_t ip_addr;
+  uint8_t mem_type;
+  uint8_t focus_change;
 };
 struct ipa_ioc_ipv6ct_init {
   uint32_t base_table_offset;
@@ -957,6 +969,7 @@ struct ipa_ioc_v4_nat_del {
 };
 struct ipa_ioc_nat_ipv6ct_table_del {
   uint8_t table_index;
+  uint8_t mem_type;
 };
 struct ipa_ioc_nat_dma_one {
   uint8_t table_index;
@@ -966,6 +979,7 @@ struct ipa_ioc_nat_dma_one {
 };
 struct ipa_ioc_nat_dma_cmd {
   uint8_t entries;
+  uint8_t mem_type;
   struct ipa_ioc_nat_dma_one dma[0];
 };
 struct ipa_ioc_nat_pdn_entry {
@@ -1137,6 +1151,22 @@ struct odl_agg_pipe_info {
 struct ipa_odl_modem_config {
   __u8 config_status;
 };
+struct ipa_ioc_fnr_index_info {
+  uint8_t hw_counter_offset;
+  uint8_t sw_counter_offset;
+};
+enum ipacm_hw_index_counter_type {
+  UL_HW = 0,
+  DL_HW,
+  DL_ALL,
+  UL_ALL,
+};
+enum ipacm_hw_index_counter_virtual_type {
+  UL_HW_CACHE = 0,
+  DL_HW_CACHE,
+  UL_WLAN_TX,
+  DL_WLAN_TX
+};
 #define IPA_IOC_ADD_HDR _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_ADD_HDR, struct ipa_ioc_add_hdr *)
 #define IPA_IOC_DEL_HDR _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_DEL_HDR, struct ipa_ioc_del_hdr *)
 #define IPA_IOC_ADD_RT_RULE _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_ADD_RT_RULE, struct ipa_ioc_add_rt_rule *)
@@ -1215,6 +1245,8 @@ struct ipa_odl_modem_config {
 #define IPA_IOC_FNR_COUNTER_ALLOC _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_FNR_COUNTER_ALLOC, struct ipa_ioc_flt_rt_counter_alloc)
 #define IPA_IOC_FNR_COUNTER_DEALLOC _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_FNR_COUNTER_DEALLOC, int)
 #define IPA_IOC_FNR_COUNTER_QUERY _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_FNR_COUNTER_QUERY, struct ipa_ioc_flt_rt_query)
+#define IPA_IOC_SET_FNR_COUNTER_INFO _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_SET_FNR_COUNTER_INFO, struct ipa_ioc_fnr_index_info)
+#define IPA_IOC_GET_NAT_IN_SRAM_INFO _IOWR(IPA_IOC_MAGIC, IPA_IOCTL_GET_NAT_IN_SRAM_INFO, struct ipa_nat_in_sram_info)
 #define TETH_BRIDGE_IOC_MAGIC 0xCE
 #define TETH_BRIDGE_IOCTL_SET_BRIDGE_MODE 0
 #define TETH_BRIDGE_IOCTL_SET_AGGR_PARAMS 1
@@ -1252,6 +1284,11 @@ struct teth_ioc_set_bridge_mode {
 struct teth_ioc_aggr_params {
   struct teth_aggr_params aggr_params;
   uint16_t lcid;
+};
+struct ipa_nat_in_sram_info {
+  uint32_t sram_mem_available_for_nat;
+  uint32_t nat_table_offset_into_mmap;
+  uint32_t best_nat_in_sram_size_rqst;
 };
 #define TETH_BRIDGE_IOC_SET_BRIDGE_MODE _IOW(TETH_BRIDGE_IOC_MAGIC, TETH_BRIDGE_IOCTL_SET_BRIDGE_MODE, struct teth_ioc_set_bridge_mode *)
 #define TETH_BRIDGE_IOC_SET_AGGR_PARAMS _IOW(TETH_BRIDGE_IOC_MAGIC, TETH_BRIDGE_IOCTL_SET_AGGR_PARAMS, struct teth_ioc_aggr_params *)
