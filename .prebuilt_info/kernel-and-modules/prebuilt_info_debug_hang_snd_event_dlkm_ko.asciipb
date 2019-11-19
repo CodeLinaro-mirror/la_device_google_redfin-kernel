@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6010910"
+    build_id: "6014807"
     target: "kernel_redfin_debug_hang"
     source_file: "snd_event_dlkm.ko"
   }
   dest_file: "debug_hang/snd_event_dlkm.ko"
-  version: "Linux version 4.19.72-g72b16284c158-ab6010910 (android-build@abfarm557) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Fri Nov 15 11:30:12 UTC 2019"
+  version: "Linux version 4.19.72-gbf2991f8ee23-ab6014807 (android-build@wpra12.hot.corp.google.com) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Mon Nov 18 08:53:01 UTC 2019"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
