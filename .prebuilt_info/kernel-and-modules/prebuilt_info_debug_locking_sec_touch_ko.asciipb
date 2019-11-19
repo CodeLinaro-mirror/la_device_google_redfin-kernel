@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6014807"
+    build_id: "6017632"
     target: "kernel_redfin_debug_locking"
     source_file: "sec_touch.ko"
   }
   dest_file: "debug_locking/sec_touch.ko"
-  version: "Linux version 4.19.72-gbf2991f8ee23-ab6014807 (android-build@wpra12.hot.corp.google.com) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Mon Nov 18 08:53:01 UTC 2019"
+  version: "Linux version 4.19.72-gb6f4af17d4ea-ab6017632 (android-build@wprb1.hot.corp.google.com) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Tue Nov 19 09:50:55 UTC 2019"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
