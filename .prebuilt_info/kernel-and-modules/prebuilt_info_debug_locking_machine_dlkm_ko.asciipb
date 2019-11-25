@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6020461"
+    build_id: "6029558"
     target: "kernel_redfin_debug_locking"
     source_file: "machine_dlkm.ko"
   }
   dest_file: "debug_locking/machine_dlkm.ko"
-  version: "Linux version 4.19.72-gebc3ef6e1847-ab6020461 (android-build@xpcc3.ams.corp.google.com) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Wed Nov 20 09:18:39 UTC 2019"
+  version: "Linux version 4.19.72-gbf148409ed86-ab6029558 (android-build@wprd10.hot.corp.google.com) (Android (5900059 based on r365631c) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 207d7abc1a2abf3ef8d4301736d6a7ebc224a290) (based on LLVM 9.0.8svn)) #1 SMP PREEMPT Sat Nov 23 15:59:21 UTC 2019"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
