@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6127523"
+    build_id: "6135876"
     target: "kernel_redfin_kasan"
     source_file: "wcd938x_dlkm.ko"
   }
   dest_file: "kasan/wcd938x_dlkm.ko"
-  version: "Linux version 4.19.81-g8def1c240124-ab6127523 (android-build@abfarm-us-east1-c-0083) (Android (6051079 based on r370808) clang version 10.0.1 (https://android.googlesource.com/toolchain/llvm-project b9738d6d99f614c8bf7a3e7c769659b313b88244)) #1 SMP PREEMPT Sat Jan 11 02:10:02 UTC 2020"
+  version: "Linux version 4.19.81-g01ac6b89eda3-ab6135876 (android-build@abfarm-us-east1-c-0082) (Android (6051079 based on r370808) clang version 10.0.1 (https://android.googlesource.com/toolchain/llvm-project b9738d6d99f614c8bf7a3e7c769659b313b88244)) #1 SMP PREEMPT Wed Jan 15 06:38:20 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
