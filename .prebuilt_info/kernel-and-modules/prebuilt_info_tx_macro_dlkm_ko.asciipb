@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6327293"
+    build_id: "6330605"
     target: "kernel_redbull"
     source_file: "tx_macro_dlkm.ko"
   }
   dest_file: "tx_macro_dlkm.ko"
-  version: "Linux version 4.19.91-g6c6ec43e1841-ab6327293 (android-build@abfarm-01150) (Android (6207600 based on r377782b) clang version 10.0.4 (https://android.googlesource.com/toolchain/llvm-project 0cb1afdb060d6619a9837ab6866cf4adf2336416)) #1 SMP PREEMPT Tue Mar 24 10:56:37 UTC 2020"
+  version: "Linux version 4.19.91-ge7c9073a8884-ab6330605 (android-build@wphn1.hot.corp.google.com) (Android (6207600 based on r377782b) clang version 10.0.4 (https://android.googlesource.com/toolchain/llvm-project 0cb1afdb060d6619a9837ab6866cf4adf2336416)) #1 SMP PREEMPT Wed Mar 25 04:43:55 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
