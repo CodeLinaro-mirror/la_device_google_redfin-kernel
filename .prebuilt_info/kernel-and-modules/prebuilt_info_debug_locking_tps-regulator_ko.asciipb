@@ -1,0 +1,11 @@
+drops {
+  android_build_drop {
+    build_id: "6572012"
+    target: "kernel_redbull_debug_locking"
+    source_file: "tps-regulator.ko"
+  }
+  dest_file: "debug_locking/tps-regulator.ko"
+  version: "Linux version 4.19.95-gfc30ad8ca60e-ab6572012 (android-build@abfarm-east4-005) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Tue Jun 9 13:12:22 UTC 2020"
+  version_group: "kernel-and-modules"
+  git_project: "device/google/redfin-kernel"
+}
