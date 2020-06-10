@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6575135"
+    build_id: "6575781"
     target: "kernel_redbull_vintf"
     source_file: "cdsp-loader.ko"
   }
   dest_file: "vintf/cdsp-loader.ko"
-  version: "Linux version 4.19.95-gb2324c8107f8-ab6575135 (android-build@abfarm-us-west1-c-0051) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jun 10 07:10:46 UTC 2020"
+  version: "Linux version 4.19.95-g53b665d13938-ab6575781 (android-build@abfarm-us-west1-c-0080) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jun 10 12:17:04 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
