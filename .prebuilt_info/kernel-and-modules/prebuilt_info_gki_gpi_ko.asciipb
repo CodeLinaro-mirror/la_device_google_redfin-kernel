@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6614058"
+    build_id: "6616346"
     target: "kernel_redbull-gki"
     source_file: "gpi.ko"
   }
   dest_file: "gki/gpi.ko"
-  version: "Linux version 4.19.110-gc3cdef6b8af4-ab6614058 (android-build@abfarm-00953) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jun 22 03:39:28 UTC 2020"
+  version: "Linux version 4.19.110-g610456bc5a8a-ab6616346 (android-build@abfarm-01165) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jun 22 18:00:02 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
