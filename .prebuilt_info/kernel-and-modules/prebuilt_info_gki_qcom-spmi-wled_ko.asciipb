@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6616346"
+    build_id: "6619817"
     target: "kernel_redbull-gki"
     source_file: "qcom-spmi-wled.ko"
   }
   dest_file: "gki/qcom-spmi-wled.ko"
-  version: "Linux version 4.19.110-g610456bc5a8a-ab6616346 (android-build@abfarm-01165) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jun 22 18:00:02 UTC 2020"
+  version: "Linux version 4.19.110-gfefd932f96f0-ab6619817 (android-build@abfarm-east4-096) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Tue Jun 23 12:40:31 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
