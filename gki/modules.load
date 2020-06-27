@@ -1,5 +1,6 @@
 kernel/kernel/trace/msm_ipc_logging.ko
 kernel/kernel/kheaders.ko
+kernel/fs/incfs/incrementalfs.ko
 kernel/drivers/irqchip/qcom-pdc.ko
 kernel/drivers/phy/qualcomm/phy-qcom-ufs.ko
 kernel/drivers/phy/qualcomm/phy-qcom-ufs-qrbtc-sdm845.ko
