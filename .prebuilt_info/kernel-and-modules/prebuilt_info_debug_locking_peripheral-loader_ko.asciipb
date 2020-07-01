@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6641191"
+    build_id: "6645700"
     target: "kernel_redbull_debug_locking"
     source_file: "peripheral-loader.ko"
   }
   dest_file: "debug_locking/peripheral-loader.ko"
-  version: "Linux version 4.19.110-gac7b3949cf59-ab6641191 (android-build@abfarm-us-west1-c-0099) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Tue Jun 30 09:26:45 UTC 2020"
+  version: "Linux version 4.19.110-ga90f64fcfd23-ab6645700 (android-build@abfarm-east4-089) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jul 1 14:44:04 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
