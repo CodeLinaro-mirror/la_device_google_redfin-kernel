@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6651097"
+    build_id: "6655342"
     target: "kernel_redbull-gki"
     source_file: "touchscreen_tbn.ko"
   }
   dest_file: "gki/touchscreen_tbn.ko"
-  version: "Linux version 4.19.110-g1e3409b55d62-ab6651097 (android-build@abfarm-01113) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Fri Jul 3 09:28:41 UTC 2020"
+  version: "Linux version 4.19.110-g3056df83bcc5-ab6655342 (android-build@abfarm-00982) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jul 6 12:01:44 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
