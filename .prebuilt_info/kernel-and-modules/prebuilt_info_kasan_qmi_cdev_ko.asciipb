@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6662061"
+    build_id: "6669109"
     target: "kernel_redbull_kasan"
     source_file: "qmi_cdev.ko"
   }
   dest_file: "kasan/qmi_cdev.ko"
-  version: "Linux version 4.19.110-g7e0e9b034f43-ab6662061 (android-build@abfarm-00942) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jul 8 09:22:15 UTC 2020"
+  version: "Linux version 4.19.110-g00d4bba9c915-ab6669109 (android-build@abfarm397) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Fri Jul 10 07:50:39 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
