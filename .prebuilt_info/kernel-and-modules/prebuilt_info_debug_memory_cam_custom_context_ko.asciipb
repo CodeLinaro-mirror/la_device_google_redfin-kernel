@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6693312"
+    build_id: "6694231"
     target: "kernel_redbull_debug_memory"
     source_file: "cam_custom_context.ko"
   }
   dest_file: "debug_memory/cam_custom_context.ko"
-  version: "Linux version 4.19.110-gede8a082ba64-ab6693312 (android-build@abfarm-east4-004) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jul 20 08:03:23 UTC 2020"
+  version: "Linux version 4.19.110-gf27ec13396ff-ab6694231 (android-build@abfarm-east4-019) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jul 20 18:04:47 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
