@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6696511"
+    build_id: "6699935"
     target: "kernel_redbull_debug_memory"
     source_file: "phy-msm-ssusb-qmp.ko"
   }
   dest_file: "debug_memory/phy-msm-ssusb-qmp.ko"
-  version: "Linux version 4.19.110-gcd2037b35367-ab6696511 (android-build@abfarm-east4-050) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Tue Jul 21 09:50:44 UTC 2020"
+  version: "Linux version 4.19.110-g2a4b8364b252-ab6699935 (android-build@abfarm-east4-058) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jul 22 11:20:33 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
