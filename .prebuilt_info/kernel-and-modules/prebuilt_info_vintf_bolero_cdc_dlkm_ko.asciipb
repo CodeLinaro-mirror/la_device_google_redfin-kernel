@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6702943"
+    build_id: "6709029"
     target: "kernel_redbull_vintf"
     source_file: "bolero_cdc_dlkm.ko"
   }
   dest_file: "vintf/bolero_cdc_dlkm.ko"
-  version: "Linux version 4.19.110-g02174591971b-ab6702943 (android-build@abfarm-east4-031) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Thu Jul 23 07:29:31 UTC 2020"
+  version: "Linux version 4.19.110-g4ba777d50bc8-ab6709029 (android-build@abfarm-01089) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Sat Jul 25 12:14:35 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
