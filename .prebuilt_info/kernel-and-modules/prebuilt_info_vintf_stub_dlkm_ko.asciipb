@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6699935"
+    build_id: "6710842"
     target: "kernel_redbull_vintf"
     source_file: "stub_dlkm.ko"
   }
   dest_file: "vintf/stub_dlkm.ko"
-  version: "Linux version 4.19.110-g2a4b8364b252-ab6699935 (android-build@abfarm-east4-058) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jul 22 11:20:33 UTC 2020"
+  version: "Linux version 4.19.110-g5682519ea384-ab6710842 (android-build@abfarm-us-west1-c-0068) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jul 27 04:30:27 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
