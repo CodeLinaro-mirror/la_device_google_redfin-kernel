@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6714955"
+    build_id: "6718106"
     target: "kernel_redbull_debug_locking"
     source_file: "clk-aop-qmp.ko"
   }
   dest_file: "debug_locking/clk-aop-qmp.ko"
-  version: "Linux version 4.19.110-g305ae9b613b0-ab6714955 (android-build@abfarm-01086) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Tue Jul 28 14:00:48 UTC 2020"
+  version: "Linux version 4.19.110-gc13f7a3b3ed5-ab6718106 (android-build@abfarm-01108) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jul 29 06:02:19 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
