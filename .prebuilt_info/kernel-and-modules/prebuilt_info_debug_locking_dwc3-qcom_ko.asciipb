@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6738297"
+    build_id: "6775325"
     target: "kernel_redbull_debug_locking"
     source_file: "dwc3-qcom.ko"
   }
   dest_file: "debug_locking/dwc3-qcom.ko"
-  version: "Linux version 4.19.110-g460b48b14ec6-ab6738297 (android-build@abfarm-01186) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Aug 5 12:15:11 UTC 2020"
+  version: "Linux version 4.19.110-gc4a9af1716cd-ab6775325 (android-build@abfarm-us-west1-c-0013) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Aug 19 08:35:40 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
