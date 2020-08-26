@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6782226"
+    build_id: "6790968"
     target: "kernel_redbull_vintf"
     source_file: "sec_touch.ko"
   }
   dest_file: "vintf/sec_touch.ko"
-  version: "Linux version 4.19.110-gcbfb814078c6-ab6782226 (android-build@abfarm-us-west1-c-0040) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Fri Aug 21 17:40:13 UTC 2020"
+  version: "Linux version 4.19.110-g9ceb3bf92e0a-ab6790968 (android-build@abfarm042) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Aug 26 03:58:47 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
