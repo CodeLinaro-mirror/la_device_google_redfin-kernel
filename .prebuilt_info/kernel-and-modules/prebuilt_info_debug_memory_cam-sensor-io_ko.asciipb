@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6824470"
+    build_id: "6828914"
     target: "kernel_redbull_debug_memory"
     source_file: "cam-sensor-io.ko"
   }
   dest_file: "debug_memory/cam-sensor-io.ko"
-  version: "Linux version 4.19.110-g04ef0dcf57d1-ab6824470 (android-build@abfarm-us-west1-c-0033) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Thu Sep 10 03:22:01 UTC 2020"
+  version: "Linux version 4.19.110-g5ba08dcb8c47-ab6828914 (android-build@abfarm392) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Fri Sep 11 22:39:01 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
