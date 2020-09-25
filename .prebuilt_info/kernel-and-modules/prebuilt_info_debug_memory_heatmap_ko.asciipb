@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6584741"
+    build_id: "6589389"
     target: "kernel_redbull_debug_memory"
     source_file: "heatmap.ko"
   }
   dest_file: "debug_memory/heatmap.ko"
-  version: "Linux version 4.19.95-gf387612ff60d-ab6584741 (android-build@abfarm-east4-102) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Fri Jun 12 13:38:28 UTC 2020"
+  version: "Linux version 4.19.95-g0e67162d5136-ab6589389 (android-build@abfarm-east4-002) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jun 15 05:18:35 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
