@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6860467"
+    build_id: "6862480"
     target: "kernel_redbull_debug_locking"
     source_file: "cam_flash.ko"
   }
   dest_file: "debug_locking/cam_flash.ko"
-  version: "Linux version 4.19.110-ga1425e91c092-ab6860467 (android-build@abfarm-01185) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Thu Sep 24 08:54:54 UTC 2020"
+  version: "Linux version 4.19.110-g030eaeb0c7e0-ab6862480 (android-build@abfarm-east4-075) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Fri Sep 25 01:38:17 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
