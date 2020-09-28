@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6594861"
+    build_id: "6599038"
     target: "kernel_redbull_vintf"
     source_file: "cam_debug_util.ko"
   }
   dest_file: "vintf/cam_debug_util.ko"
-  version: "Linux version 4.19.110-g7a1b8ea81e64-ab6594861 (android-build@abfarm-east4-049) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Tue Jun 16 13:37:36 UTC 2020"
+  version: "Linux version 4.19.110-ga1044be25aab-ab6599038 (android-build@abfarm378) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jun 17 10:54:48 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
