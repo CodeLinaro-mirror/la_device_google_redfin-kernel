@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6710842"
+    build_id: "6718106"
     target: "kernel_redbull_kasan"
     source_file: "cam_eeprom.ko"
   }
   dest_file: "kasan/cam_eeprom.ko"
-  version: "Linux version 4.19.110-g5682519ea384-ab6710842 (android-build@abfarm-us-west1-c-0068) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Jul 27 04:30:27 UTC 2020"
+  version: "Linux version 4.19.110-gc13f7a3b3ed5-ab6718106 (android-build@abfarm-01108) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Wed Jul 29 06:02:19 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
