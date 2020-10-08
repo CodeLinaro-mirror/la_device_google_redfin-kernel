@@ -1,11 +1,11 @@
 drops {
   android_build_drop {
-    build_id: "6729870"
+    build_id: "6750384"
     target: "kernel_redbull"
     source_file: "arm-memlat-mon.ko"
   }
   dest_file: "arm-memlat-mon.ko"
-  version: "Linux version 4.19.110-ga23c963c3308-ab6729870 (android-build@abfarm-00936) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Sun Aug 2 14:44:06 UTC 2020"
+  version: "Linux version 4.19.110-g9dd61cfed2e4-ab6750384 (android-build@abfarm-us-west1-c-0017) (Android (6443078 based on r383902) clang version 11.0.1 (https://android.googlesource.com/toolchain/llvm-project b397f81060ce6d701042b782172ed13bee898b79)) #1 SMP PREEMPT Mon Aug 10 08:43:16 UTC 2020"
   version_group: "kernel-and-modules"
   git_project: "device/google/redfin-kernel"
 }
